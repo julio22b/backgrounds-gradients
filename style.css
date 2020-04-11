@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  height: 5vh;
+  border: 1px solid #6d6d6d;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px #333333;
+          box-shadow: 0px 0px 3px #333333;
+}
+
+header nav {
+  height: 100%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  height: 100%;
+}
+
+header nav li {
+  height: 100%;
+  padding: 0 2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#686868), color-stop(50%, #5e5e5e), color-stop(50%, #707070), to(#8d8d8d));
+  background: linear-gradient(to bottom, #686868, #5e5e5e 50%, #707070 50%, #8d8d8d);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 1px solid #545454;
+  position: relative;
+}
+
+header nav li a,
+header nav li input {
+  height: 50%;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 23;
+}
+
+header nav li:hover::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+header nav li:first-child a {
+  background-image: url("./img/iconmonstr-apple-os-1-32.png");
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 36px;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+header nav li:last-child {
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#686868), color-stop(50%, #5e5e5e), color-stop(50%, #707070), to(#8d8d8d));
+  background: linear-gradient(to bottom, #686868, #5e5e5e 50%, #707070 50%, #8d8d8d);
+  position: relative;
+  padding: 0 1.5em;
+}
+
+header nav li:last-child img {
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  width: 13px;
+  height: 13px;
+}
+
+header nav li:last-child input {
+  width: 100%;
+  height: 75%;
+  padding: 0.3em 0;
+  padding-left: 32px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0px 0px 3px black;
+          box-shadow: inset 0px 0px 3px black;
+}
+
+header nav li:last-child::after {
+  content: none;
+}
+
+.hero {
+  height: 70vh;
+  background: url("./img/your_verse_hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: white;
+}
+
+.hero article {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero article h1 {
+  font-size: 3.3rem;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+.hero article p {
+  font-size: 1.9rem;
+  width: 60%;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.hero article p a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.hero article p a:hover {
+  text-decoration: underline;
+}
+
+.hero article p:last-child::after {
+  content: '';
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-image: url("./img/iconmonstr-video-15-32.png");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25vh;
+  margin-top: 2px;
+}
+
+.products article {
+  background-size: contain;
+  background-repeat: no-repeat;
+  -ms-flex-preferred-size: 24.9%;
+      flex-basis: 24.9%;
+  height: 100%;
+}
+
+.products .iphone5s {
+  background: url("./img/promo_iphone5s.jpg");
+}
+
+.products .iphone5c {
+  background: url("./img/promo_iphone5c.jpg");
+}
+
+.products .birthday {
+  background: url("./img/promo_30_years.jpg");
+}
+
+.products .supplier {
+  background: url("./img/promo_supplier_responsibility.jpg");
+}
+
+footer {
+  width: 70%;
+  font-size: 0.6rem;
+  color: #898d8d;
+  margin: 2em auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
+  grid-row-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  color: #1793d0;
+  text-decoration: none;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul li:first-child {
+  border: none;
+}
+
+footer ul li {
+  padding-left: 0.5em;
+  margin-left: 0.5em;
+  border-left: 1px solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li a {
+  display: inline-block;
+  width: 100%;
+}
+
+footer ul li:last-child a {
+  display: inline-block;
+  width: 24px;
+  height: 100%;
+  background-image: url("./img/usa.png");
+  background-size: cover;
+}
+
+footer p:last-child {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+/*# sourceMappingURL=style.css.map */
